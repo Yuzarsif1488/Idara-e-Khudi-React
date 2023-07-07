@@ -1,0 +1,84 @@
+.datatable {
+  display: flex;
+  align-items: center;
+
+  .cellImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+  .isSponsored {
+    padding: 5px;
+    border-radius: 8px;
+
+    &.Yes {
+      background-color: rgb(200, 245, 200);
+      color: green;
+      font-weight: bold;
+    }
+    &.No {
+      background-color: rgb(245, 164, 164);
+      color: red;
+      font-weight: bold;
+    }
+  }
+  .affidavit {
+    padding: 5px;
+    border-radius: 8px;
+
+    &.Yes {
+      background-color: rgb(200, 245, 200);
+      color: green;
+      font-weight: bold;
+    }
+
+    &.No {
+      background-color: rgb(245, 164, 164);
+      color: red;
+      font-weight: bold;
+    }
+  }
+  .status {
+    padding: 5px;
+    border-radius: 8px;
+
+    &.Active {
+      background-color: rgb(200, 245, 200);
+      color: green;
+      font-weight: bold;
+    }
+
+    &.Pending {
+      background-color: rgba(223, 244, 64, 0.483);
+      color: rgb(177, 169, 9);
+      font-weight: bold;
+    }
+    &.Left {
+      background-color: rgba(245, 200, 204, 0.653);
+      color: rgb(128, 0, 19);
+      font-weight: bold;
+    }
+  }
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .viewButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: rgb(24, 42, 42);
+      border: 1px dotted rgba(47, 79, 79, 0.467);
+      cursor: pointer;
+    }
+    .deleteButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: crimson;
+      border: 1px dotted rgba(220, 20, 60, 0.544);
+      cursor: pointer;
+    }
+  }
+}

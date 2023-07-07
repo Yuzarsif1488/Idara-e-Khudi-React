@@ -1,0 +1,33 @@
+.sponsordatatable {
+  padding: 20px;
+
+  .cellwithImg {
+    display: flex;
+    align-items: center;
+
+    .cellImg {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+  }
+  .cellWithStatus {
+    padding: 5px;
+    border-radius: 5px;
+
+    &.Active {
+      background-color: rgba(0, 0, 0, 0.165);
+      color: green;
+    }
+    &.Pending {
+      background-color: rgba(68, 44, 4, 0.184);
+      color: goldenrod;
+    }
+    &.Passive {
+      background-color: rgba(136, 7, 7, 0.179);
+      color: crimson;
+    }
+  }
+}
